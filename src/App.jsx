@@ -5,6 +5,7 @@ import Home from './Component/Home'
 import About from './Component/About'
 import Contact from './Component/Contact'
 import SignUp from './Component/SignUp'
+import ErrorPage from './Component/Error'
 
 function App() {
   
@@ -17,6 +18,7 @@ function App() {
           <Route path='/about' element={<About/>}/>
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/signup' element={<SignUp/>}/>
+          <Route path='*' element={<ErrorPage/>}/>
         </Route>
       </Routes>
      </BrowserRouter>
